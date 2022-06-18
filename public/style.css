@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+
+/*背景色*/
+body {
+  background: #ffc21a;
+}
+/* 固定畫面 */
+#frontPage{
+  position: fixed;
+  position: sticky;
+  top:0%;
+  z-index: 5; 
+  /* z-index 調整盒子的層級位置 */
+}
+
+/* .carousel{
+  ;
+} */
+/*超連結顏色*/
+a {
+  color: rgb(255, 194, 87);
+}
+/*游標超連結顏色*/
+a:hover {
+  color: #ff4800;
+  text-decoration: none;
+}
+
+.goTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+  
+.goTopBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;}
+   
+  
+
+/*頁首,導覽,頁尾的共通設定*/
+header,nav,footer {
+  text-align: center;
+}
+
+
+/*導覽樣式設定*/
+.menu li {
+  list-style-type: none;
+  display: inline-block;
+  width: 180px;
+  margin: 0 10px;
+}
+/*1標頭樣式設定*/
+.menu1 li {
+  list-style-type: none;
+  display: inline-block;
+  width: 90px;
+  margin: 0 10px;
+}
+
+/* 選單按鈕底色 */
+.menu a {
+  display: block;
+  padding: 10px;
+  background: rgb(255, 178, 198);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 1選單按鈕底色 */
+.menu1 a {
+  display: block;
+  padding: 10px;
+  background: rgb(255, 194, 87);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+/* 1游標 選單變色 */
+.menu1 a:hover {
+  background: #4141ff;
+}
+
+button{
+  background: #feb9ff;
+}
+/* 游標 選單變色 */
+.menu a:hover {
+  background: #ff6a503f;
+}
+
+/*頁面標題設定*/
+h2 {
+    /* 外框 */
+  /* width: 500px;
+  margin: 10px auto;
+  padding: 30px;
+  border: 5px solid #ffffff;  */
+ 
+  /* background-color: #ff00f2; */
+  /* 標題文字 */
+  color: rgb(172, 71, 3);
+  font-size: 250%;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  /* 文字底線 */
+  text-shadow: 1px 1px 2px #fdbeba;
+  /* 外框線陰影漸層 */
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.815); */
+  /* 漸層 */
+  /* background-image: linear-gradient(to bottom, #f0f9ff,#fdf1ba); */
+  font-family: 'Limelight', cursive;
+}
+
+/*次標題設定*/
+.h {
+  padding: 5px;
+  margin-bottom: 20px;
+  /* 外框-虛線 */
+  /* border: 1px dotted #5031be; */
+  border-left: 20px solid #ffe2be;
+  color: rgb(255, 95, 87);
+  border-radius: 5px 0 0 5px;
+}
+
+
+/*小標題設定*/
+.h-sub {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #ffc2b9;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px #fdf1ba;
+}
+.h-sub span{
+  font-weight: normal;
+}
+
+/*內容區塊邊框設定*/
+#contents {
+  width: 798px;
+  margin: 40px auto;
+  padding: 40px 80px;
+  border: 1px solid #000000;
+  background-color: rgb(255, 255, 255);
+}
+
+/*「更多介紹」連結設定*/
+.more {
+  text-align: right;
+}
+.more::after {
+  content: url(img/ico_arrow.png);
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+/*連結圖示設定*/
+a[target="_blank"]::after {
+  content: url(img/ico_blank.png);
+  margin-left: 5px;
+  vertical-align: middle;
+}
+a[href^="mailto:"]::after {
+  content: url(img/ico_mail.png);
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/*區塊間分隔*/
+#contents > section + section {
+  margin-top: 80px;
+}
+
+/*文繞圖設定*/
+.imgL {
+  float: left;
+  margin-right: 20px;
+}
+.imgR {
+  float: right;
+  margin-left: 20px;
+}
+.clear {
+  clear: both;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*圓形圖片設定*/
+.img-round {
+  border-radius: 50%;
+}
+
