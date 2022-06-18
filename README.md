@@ -1,4 +1,4 @@
-# 20220516-camulet-demo-test
+# 2022-demo-test
 
 ## Project setup
 ```
